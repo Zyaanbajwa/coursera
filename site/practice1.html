@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+
+	/*Base styles for media queries i.e responsive design*/
+
+	* {
+		box-sizing: content-box;
+	}
+	h1 {
+		border-bottom: 20px;
+	}
+
+	p {
+		border: 1px solid black;
+		float: left;
+		padding: 15px;
+
+		}
+
+		#p1 {
+			background-color: green;
+			width: 150px;
+			height: 150px;
+
+		}
+		#p2 {
+			background-color: blue;
+			width: 125px;
+			height: 150px;
+			margin-left: 20px;
+		}
+/* for lagre devices */
+     @media (min-width: 1200px) {
+     		p {
+		border: 1px solid black;
+		float: left;
+
+		}
+
+		#p1 {
+			background-color: green;
+			width: 50%;
+
+		}
+		#p2 {
+			background-color: blue;
+			width: 125px;
+			height: 50px;
+			margin-left: 10px;
+		}
+     }
+/*for small devices*/
+    @media (min-width:100px) and (max-width: 1000px) {
+
+    	    p {
+		border: 1px solid black;
+		float: left;
+
+		}
+
+		#p1 {
+			background-color: purple;
+			width: 50%;
+
+		}
+		#p2 {
+			background-color: blue;
+			width: 25px;
+			height: 50px;
+			margin-left: 5px;
+		}
+    }
+
+	</style>
+</head>
+<body>
+<h1>Media queries</h1>
+
+	<p id="p1"></p>
+	<p id="p2"></p>
+
+</body>
+</html>
